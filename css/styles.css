@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* STEP 2: TYPE/ELEMENT Selector */
+html {
+    background-color: lightskyblue;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+    margin: 0 auto;
+    min-width: 768px;
+    max-width: 1024px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+main section {
+    width: 60%;
+}
+
+main aside {
+    width: 40%;
+}
+
+/* STEP 3: CLASS Selector */
+.new-feature {
+    display: inline-block;
+    padding-right: 25px;
+    background-image: url("images/new.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/* STEP 4: ID Selector */
+#emailAddress {
+    font-weight: bold;
+}
+
+/* STEP 5: ATTRIBUTE Selector */
+a[rel='external'] {
+    padding-left: 20px;
+    background-image: url("../images/new.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+main a {
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+/* STEP 6: PSEUDOCLASS Selector */
+main a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+/* STEP 7: PSEUDOELEMENT Selector */
+blockquote::first-letter {
+    font-size: 2em;
+}
+
+/* STEP 8: DECENDENT/CONTEXTUAL Selector */
+footer p {
+    text-align: right;
+}
+
+/* STEP 9: CHILD/DIRECT-DESCENDENT Selector */
+section > p {
+    text-indent: 3em;
+}
+
+/* STEP 10: GROUPED Selector */
+h1, h2, footer {
+    color: white;
+}
